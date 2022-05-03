@@ -34,7 +34,7 @@ Laravel will auto-register the Service Provider. You'll need to register the too
     {
         return [
             // ...
-            \Mirovit\NovaNotifications\NovaNotifications::make(),
+            \Youpi\YoupiNotifications\YoupiNotifications::make(),
         ];
     }
 ```
