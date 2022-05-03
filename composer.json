@@ -1,6 +1,6 @@
 {
     "name": "youpi/youpi-notifications",
-    "description": "A Laravel Nova tool.",
+    "description": "A Laravel Nova tool for real time notification.",
     "keywords": [
         "laravel",
         "nova"
