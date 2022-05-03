@@ -25,7 +25,7 @@ youpi notifications in laravel nova
 
 ## Installation
 
-Install via composer `composer require mirovit/nova-notifications`.
+Install via composer `composer require youpi/youpi-notifications`.
 
 Laravel will auto-register the Service Provider. You'll need to register the tool with Laravel Nova.
 
@@ -89,7 +89,7 @@ Find in `views/vendor/nova/layout.blade.php`:
 
 Replace with:
 ```php
-@include('nova-notifications::dropdown')
+@include('YoupiNotifications::dropdown')
 <dropdown class="ml-8 h-9 flex items-center dropdown-right">
     @include('nova::partials.user')
 </dropdown>
@@ -138,7 +138,7 @@ class Created extends Notification
      */
     public function toArray($notifiable)
     {
-        return \Mirovit\NovaNotifications\Notification::make()
+        return \Youpi\YoupiNotifications\Notification::make()
             ->info('A new user was created.')
             ->subtitle('There is a new user in the system - ' . $this->user->name . '!')
             ->routeDetail('users', $this->user->id)
